@@ -1,0 +1,375 @@
+
+body{
+    background-color: #eee;
+}
+
+pre{
+    background-color: #F7F7F7;
+    line-height: .6em;
+    line-height: 1em;
+    font-size: 2em;
+    /*font-size: 2em;*/
+}
+
+.co_contain{
+  width: 75%;
+  margin: 19px auto;
+  background-color: #F7F7F7;
+}
+
+.container{
+  /*  position: relative;
+    margin: 19px auto;
+    padding: 0;
+    max-width: 1200px;
+    min-width: 920px;
+    width: 75%;*/
+}
+
+.ltr{
+    float: right;
+}
+
+li{
+    list-style: none;
+}
+
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+
+
+                                            /*homepage*/
+.homepage a{
+    width: 50%;
+    background-color: #F7F6ED;
+    color: #1F0079;
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 1.9em;
+    text-decoration: none;
+    border-bottom: solid 1px #999;
+    transition: .3s;
+    border-radius: 4px;
+    list-style: none;
+    border: 1px solid #eee;
+}
+
+.homepage a:hover{
+    border: solid 1px #999;
+}
+                                            /*header*/
+header{
+    border-top: 1px solid #999;
+    border-right: 1px solid #999;
+    border-left: 1px solid #999;
+    width: 100%;
+    background-color:top( rgba(135,135,135,1) 0%,rgba(168,168,168,1) 50%,rgba(249,249,249,1) 100%,rgba(249,249,249,1) 100%,rgba(189,196,201,1) 100%));  Chrome10-;
+}
+
+header h1{
+    margin:0;
+    padding: 5px 2%;
+}
+
+header div {
+    padding: 2px;
+    color:#fff;
+}
+
+header li{
+    text-align:right;
+    color: #8E8A8A;
+    float:right;
+}
+header hr{
+    opacity:.3;
+}
+
+.fa{
+    margin: 0 10px;
+    font-size: 30px;
+    color: green;
+    padding: 4px 1%;
+    transition:.2s;
+}
+.fa:hover{
+   color: #48C548;
+}
+.about{
+    color: green;
+    font-size: 1.5em;
+    width: 100%;
+    padding: 6px 21px;
+    display: inline-block;
+}
+
+.about:hover{
+   color: #48C548;
+}
+
+.lang input{
+    width: 53px;
+    background-color: #fff;
+    color: green;
+    border: solid 1px green;
+    float: left;
+    margin: 8px 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1.1em;
+    padding: 1px 5px;
+    transition:.2s;
+}
+.lang input:hover{
+    color: #fff;
+    border: solid 1px #FFF;
+    background-color:green;
+
+
+}
+#s_hr{
+    height: 5px;
+    background-color: green;
+    border: none;
+    opacity: 1;
+}
+
+                                    /*des*/
+.des{
+    width: 80%;
+    font-size: 1em;
+    color: #1F0079;
+}
+
+.css-typing
+{
+    width: 30em;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 6s steps(70, end) infinite;
+    animation: type 6s steps(70, end) infinite;
+}
+
+@keyframes type{
+    0% { width: 0; }
+    100%{width: 100;}
+}
+
+@-webkit-keyframes type{
+     0% { width: 0;}
+    100%{width: 100;}
+}
+
+::selection{
+  background: #A3EBEF;
+}
+
+
+
+                                           /* sidebar*/
+.sidebar{
+    /*float: left;*/
+    margin-right: 0;
+}
+.sidebar a{
+    width:100%;
+    background-color: #444141;
+    padding: 5px 10px;
+    font-size: 12px;
+    transition:.2s;
+    display: inline-block;
+    color:#eee;
+    text-align: center;
+}
+
+.active a{
+    background-color: #8E8888;
+
+}
+
+.sidebar a:hover{
+    background-color: #777;
+    color: #eee;
+}
+                                                /*/main*/
+.main h1{
+margin-right: 1%;
+display: block;
+width: 100%;
+font-size: 1.5em;
+}
+
+.contain form{
+    margin:0 auto;
+    padding: 0 50px;
+}
+
+input{
+    width: 100%;
+    font-size: 1.5em;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    border-bottom: 6px solid green;
+    transition: none;
+    border-top: 1px solid #efefef;
+    border-left: 1px solid #efefef;
+    border-right: 1px solid #efefef;
+    cursor: pointer;
+}
+
+input[type="text"] + label{
+    text-align: center;
+    display: block;
+}
+
+input[type="checkbox"]{
+    width: 7%;
+    margin: 8px 0;
+}
+
+input[type="radio"]{
+    width: 7%;
+    margin: 8px 0;
+}
+input[type="radio"] + label , input[type="checkbox"] + label{
+    width: 50%;
+    display: inline-block;
+    font-size: 1.5em;
+}
+
+ input[type="number"]:focus,input[type="text"]:focus,input[type="number"]:not(:placeholder-shown), input[type="text"]:not(:placeholder-shown) {
+   border-bottom-width:2px ;
+   border-top: 5px solid transparent;
+   border-left: none;
+   border-right: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+
+ input[type="number"]:focus + label, input[type="number"]:not(:placeholder-shown) + label{
+    top:100%;
+    font-size:1.1em;
+    transition:.3;
+}
+
+ input[type="number"]+label{
+    font-size: 1.2em;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top:0;
+    text-align: center;
+    transition: .3s;
+    cursor: pointer;
+}
+.rtl label{
+    /*right: 15.5%;*/
+}
+.co_input{
+    position: relative;
+    margin-bottom: 40px;
+}
+
+
+ .contain input[type="submit"] {
+    width: 100%;
+    color: #055005;
+    background: #EFF1E4;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.5em;
+    transition: .3s;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.contain input[type="submit"]:hover, .contain input[type="submit"]:focus{
+    color: #EFF1E4;
+    background: #79A279;
+}
+
+
+
+                                                   /*footer*/
+footer{
+    width: 100%;
+    text-align: center;
+    line-height: 20px;
+    margin:0;
+    color: green;
+}
+
+footer a{
+    margin-bottom: 0;
+    float: left;
+    font-size: 1.2em;
+    margin: 0 1%;
+    color: green;
+}
+footer a:hover{
+     color: #48C548;
+}
+
+#result{
+    background-color: #555;
+    color: #fff;
+    width: 100%;
+    font-size: 2em;
+    padding: 40px 3%;
+    text-align: left;
+}
+
+.co_about{
+  width: 75%;
+  margin: 19px auto;
+  background-image: url("Ermile.png");
+  background-repeat: no-repeat;
+  background-color: #F7F7F7;
+  z-index: 999;
+  background-position: 42% 227%;
+  min-height: 720px;
+  opacity: .7;
+
+}
+
+.co_about header{
+text-align: right;
+border-bottom: 1px solid #999;
+}
+
+.co_about a{
+    padding: 14px;
+    font-size: 1.2em;
+    display: inline-block;
+}
+
+@media print{
+ header, footer, .sidebar, h1
+ {
+    display: none!important;
+ }
+ pre{font-size: 1.5em;width:100%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
